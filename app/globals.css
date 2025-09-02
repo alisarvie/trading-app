@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -111,6 +111,144 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-binance: var(--font-binance);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+   --color-btn-background: var(--btn-background);
+  --color-btn-foreground: var(--btn-foreground);
+
+  --color-buy: var(--buy);
+  --color-sell: var(--sell);
+  --color-TertiaryText: var(--color-TertiaryText);
+
+  --color-depth-buy-bg: var(--depth-buy-bg);
+  --color-depth-sell-bg: var(--depth-sell-bg);
+
+  --color-grid: var(--grid);
+}
+
+:root {
+  --radius: 0.625rem;
+
+  /* ✅ Binance Light Theme */
+  --background: #FFFFFF;
+  --foreground: #000000;
+  --card: #FFFFFF;
+  --card-foreground: #000000;
+  --popover: #FFFFFF;
+  --popover-foreground: #000000;
+  --primary: #000000;
+  --primary-foreground: #FFFFFF;
+  --secondary: #FAFAFA;
+  --secondary-foreground: #000000;
+  --muted: #FAFAFA;
+  --muted-foreground: #757575;
+  --accent: #FAFAFA;
+  --accent-foreground: #000000;
+  --destructive: #F6465D;
+  --border: #EDEDED;
+  --input: #DDDDDD;
+  --ring: #EDEDED;
+
+  /* Binance specific */
+  --color-TertiaryText : #707A8A;
+  --btn-background: #FCD535;    
+  --btn-foreground: #000000; 
+
+  --buy: #2EBD85;
+  --sell: #F6465D;
+
+  --depth-buy-bg: #E6FFF1;
+  --depth-sell-bg: #FEF1F2;
+
+  --grid: #EDEDED;
+}
+
+.dark {
+  /* ✅ Binance Dark Theme */
+  --background: #181A20;
+  --foreground: #EAECEF;
+  --card: #181A20;
+  --card-foreground: #EAECEF;
+  --popover: #181A20;
+  --popover-foreground: #EAECEF;
+  --primary: #EAECEF;
+  --primary-foreground: #181A20;
+  --secondary: #0B0E11;
+  --secondary-foreground: #EAECEF;
+  --muted: #0B0E11;
+  --muted-foreground: #929AA5;
+  --accent: #0B0E11;
+  --accent-foreground: #EAECEF;
+  --destructive: #F6465D;
+  --border: #333B47;
+  --input: #29313D;
+  --ring: #434C5A;
+
+  /* Binance specific */
+  --color-TertiaryText : #707A8A;
+  --btn-background: #FCD535;
+  --btn-foreground: #202630; 
+
+  --buy: #2EBD85;
+  --sell: #F6465D;
+
+  --depth-buy-bg: #102821;
+  --depth-sell-bg: #35141D;
+
+  --grid: #333B47;
 }
 
 @layer base {

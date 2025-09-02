@@ -258,7 +258,7 @@ export function NavigationMenuDemo() {
         <Button variant="secondary" className="bg-[#1d2833] text-white rounded-sm">
           Log In
         </Button>
-        <Button className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-sm">
+        <Button className="bg-btn-background text-btn-foreground hover:bg-btn-background rounded-sm">
           Sign Up
         </Button>
         <Globe className="h-5 w-5 text-white cursor-pointer" />
