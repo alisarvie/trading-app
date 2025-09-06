@@ -35,7 +35,7 @@ export default function MarketGrid() {
   }, [])
 
   return (
-    <div className="flex items-center gap-4 bg-[#181A20] rounded-lg px-2">
+    <div className="flex items-center gap-4 bg-[#181A20] rounded-lg px-4">
       {data.map((coin) => (
         <div key={coin.symbol} className="bg-[#1E2026] rounded-lg text-center flex items-center space-x-1 text-xs">
           <h2 className="">{coin.symbol}</h2>
