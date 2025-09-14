@@ -184,7 +184,7 @@
 
   /* ✅ Binance Light Theme */
   --background: #FFFFFF;
-  --foreground: #000000;
+  --foreground: #181A20;
   --card: #FFFFFF;
   --card-foreground: #000000;
   --popover: #FFFFFF;
@@ -258,4 +258,27 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+/* thin scrollbar, transparent track */
+.custom-scroll {
+  scrollbar-width: thin; /* firefox */
+  scrollbar-color: #555 transparent;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(85,85,85,0.7);
+  border-radius: 999px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(120,120,120,0.9);
 }
